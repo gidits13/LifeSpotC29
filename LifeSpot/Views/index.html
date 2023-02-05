@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* Свойства стиля элемента. Подробнее о них - в модуле по CSS */
+        .block {
+            border: 2px solid black;
+            background-color: azure;
+            padding: 10px;
+        }
+
+        /*        Задание 26.4.4*/
+        .video-container {
+            display: inline-block;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>LifeSpot</title>
+    <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css">
+    <script src="../Static/JS/index.js"></script>
+    <script>
+       // ageCheck();
+        handleSession();
+        printSession();
+        setTimeout(function() {alert("вывод сообщения с задержкой")}, 7000);
+        setTimeout(function() {alert('asdasd')},10000);
+    </script>
+<!--     <script>let session = ageCheck();
+            printSession(session);
+    </script> -->
+</head>
+<body>
+    <header id="header-index">
+        <div>
+            <h1>LifeSpot — прямые трансляции с улиц</h1>
+            <p>Покажем, что происходит прямо сейчас</p>
+            <input type="text" class="search"  oninput="
+            filterInput();
+            //filterInput(getInputText());
+            " size=80%>
+
+        </div>
+    </header>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/srlpC5tmhYs"
+                title="Bryant Park Webcam" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        <h3>Нью-Йорк</h3>
+    </div>
+
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/e3IGUhlmXMs" title="🕹 LIVE CAMERA PTZ Amazing St. Petersburg Russia Live Chat. Невский пейзаж Санкт-Петербург живой чат"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        <h3>Санкт-Петербург</h3>
+    </div>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JplMzss6_YE"
+                title="London Bus Ride 🇬🇧 - ENTERING EVERY BUS - Empty London Lockdown Tour - London Live" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        <h3>лондон</h3>
+    </div>
+    <div>
+        <!--FOOTER-->
+    </div>
+    <!--SIDEBAR-->
+
+
+
+</body>
+</html>
